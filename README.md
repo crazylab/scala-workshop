@@ -4,8 +4,14 @@ Scala installation [link](https://www.scala-lang.org/download/2.11.12.html)
 
 Download and install JDK 8 from [here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) in your machine.
 
+```shell script
+$ brew update
+$ brew tap caskroom/cask
+$ brew install Caskroom/cask/java`
+```
+
 Install [Homebrew](https://brew.sh/) and then run the following command
-```bash
+```shell script
 $ brew install scala@2.11
 $ brew install sbt
 $ sbt clean compile
