@@ -21,8 +21,8 @@ class FunctionsTest extends AnyFlatSpec with Matchers {
   }
 
   "repeat" should "repeat the given string the given number of times" in {
-    repeat5Times("*") should be ("*****")
-    repeat10Times("*") should be ("**********")
+    repeat5Times("*") should be("*****")
+    repeat10Times("*") should be("**********")
   }
 
   "whileLoop" should "process execute the function until the breaking condition is met" in {
@@ -35,5 +35,11 @@ class FunctionsTest extends AnyFlatSpec with Matchers {
     i should be(10)
   }
 
+  "isOdd" should "return true when the given integer number is an odd number" in {
+    import functions.Functions.IntFunctions
+
+    5.isOdd() should be(true)
+    8 isOdd() should be(false)
+  }
 
 }
